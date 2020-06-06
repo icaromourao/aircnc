@@ -21,5 +21,9 @@
   "devDependencies": {
     "babel-preset-expo": "^7.0.0"
   },
+  "resolutions": {
+    "minimist": "^1.2.5",
+    "mem": "^6.1.0"
+  },
   "private": true
 }
