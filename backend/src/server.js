@@ -3,11 +3,13 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
 
+require('dotenv').config();
+
 const routes = require('./routes');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://icaromourao:icaromourao@omnistack-pr24g.mongodb.net/aircnc?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGO_CONNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

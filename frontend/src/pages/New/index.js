@@ -49,7 +49,7 @@ export default function New({ history }) {
             <label htmlFor="company">EMPRESA</label>
             <input 
             id="company"
-            placeholder="Sua empresa incrivel"
+            placeholder="Sua empresa"
             value={company}
             onChange={event => setCompany(event.target.value)}
                 />
@@ -62,10 +62,10 @@ export default function New({ history }) {
             onChange={event => setTechs(event.target.value)}
                 />
 
-            <label htmlFor="company">VALOR DA DIÁRIA * <span>(em branco para GRATUITO)</span></label>
+            <label htmlFor="company">VALOR DA DIÁRIA <span>(não preencher, para GRATUITO)</span></label>
             <input 
             id="price"
-            placeholder="Quais tecnologias usam?"
+            placeholder="Qual o valor  diário?"
             value={price}
             onChange={event => setPrice(event.target.value)}
                 />
